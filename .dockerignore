@@ -1,0 +1,6 @@
+env/
+venv/
+db.sqlite3
+run.py
+__pycache__/
+docker-compose.yml

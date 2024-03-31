@@ -1,0 +1,65 @@
+[
+  {
+    "model": "users.role",
+    "pk": 1,
+    "fields": {
+      "label": "National Admin",
+      "key": "national_admin",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 2,
+    "fields": {
+      "label": "Divisional Admin",
+      "key": "divisional_admin",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 3,
+    "fields": {
+      "label": "District Admin",
+      "key": "district_admin",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 4,
+    "fields": {
+      "label": "National Authority",
+      "key": "national_authority",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 5,
+    "fields": {
+      "label": "Divisional Authority",
+      "key": "divisional_authority",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 6,
+    "fields": {
+      "label": "District Authority",
+      "key": "district_authority",
+      "permissions": []
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 7,
+    "fields": {
+      "label": "Upazilla Admin",
+      "key": "upazilla_admin",
+      "permissions": []
+    }
+  }
+]

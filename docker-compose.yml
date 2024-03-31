@@ -1,0 +1,45 @@
+services:
+  web:
+    image: hasanabeer609/curriculum-ums
+#    build: ./
+    command: ./wait-for-it.sh mysql:3306 -- ./docker-entrypoint.sh
+    ports:
+      - "8000:8000"
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=wohk5066
+      - MYSQL_HOST=mysql
+      - DB_NAME=users
+    depends_on:
+      - mysql
+    restart: always
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      - MYSQL_DATABASE=users
+      - MYSQL_ROOT_PASSWORD=wohk5066
+    volumes:
+      - mysqldata:/var/lib/mysql
+
+  smtp4dev:
+    image: rnwood/smtp4dev
+
+    ports:
+      - 3000:80
+      - 2525:25
+    environment:
+      - ServerOptions__HostName=smtp4dev
+    restart: always
+    volumes:
+      - smtp4dev-data:/smtp4dev
+#    healthcheck:
+#      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+#      timeout: 20s
+#      retries: 10
+volumes:
+  mysqldata:
+  smtp4dev-data:

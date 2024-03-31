@@ -1,0 +1,50 @@
+[
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "Divisional admin"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "District Admin"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "Role"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "User"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "National admin"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "National authority"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "Divisional authority"
+    }
+  },
+  {
+    "model": "users.apppermissiongroup",
+    "fields": {
+      "group_name": "District authority"
+    }
+  }
+]

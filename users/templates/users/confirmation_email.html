@@ -1,0 +1,18 @@
+{% load i18n %}
+{% block subject %} {% blocktrans %}Account registration on {{ site_name }}{% endblocktrans %} {% endblock subject %}
+{% block text_body %}
+    {% blocktrans %}
+        Your account has been created successfully.
+        Your username is: {{ username }}
+        Your role is {{ role }}
+    {% endblocktrans %}
+{% endblock text_body %}
+{% block html_body %}
+{% blocktrans %}
+    Your account has been created successfully. You can login to your account after approving.
+    <p>Your username is: <b>{{ username }}</b></p>
+    <p>Your role is: <b>{{ role }}</b></p>
+    <br>
+    <p>Thank you.</p>
+{% endblocktrans %}
+{% endblock html_body %}
